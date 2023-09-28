@@ -1,0 +1,16 @@
+<%- include("props/header") -%>
+
+    <div class="compose-block">
+        <h2>Compose Here</h2>
+
+        <form action="/compose" method="POST">
+
+            <input id="title-input" type="text" name="postTitle" placeholder="Title of the Post">
+            <textarea name="postBody" placeholder="Start typing the post..."></textarea>
+            <br/>
+            <button id="post-btn" type="submit" name="submit" value="postButton">Post</button>
+        </form>
+
+    </div>
+
+    <%- include("props/footer") -%>
